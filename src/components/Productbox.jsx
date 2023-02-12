@@ -8,7 +8,7 @@ function Productbox(props) {
     </div>
     <div className="a-b-text">
         <h2>{props.title}</h2>
-        <button className='productbox-button'>Order Now for free</button>
+        <button className='productbox-button'>Order Now </button>
     </div>
    </div>
   )
