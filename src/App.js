@@ -10,25 +10,24 @@ import  PropagateLoader  from 'react-spinners/PropagateLoader';
 
 function App() {
 
-  const[loading,setloading] = useState(false);
-  const override= css`
-  display:block;
+  const[loading,setLoading] = useState(false);
+  const Override = css`
+   display:block;
    border-color:red;
-   margin-bottom: 20% ;
-   padding-top : 200px;
-  `;
+   margin: auto;
+ ` ;
 
   useEffect(()=> {  
-    setloading(true)
+    setLoading(true)
     setTimeout(()=> {
-      setloading(false)
+      setLoading(false)
     },5000);
   },[])
 
   return (
     <div className="App">
       {
-        loading ? <PropagateLoader color={"#3d2514"} loading ={loading} css={override} size={40}/>
+        loading ? <PropagateLoader color={"#3d2514"} loading ={loading} css={Override} size={40}/>
         :
         <>
 
